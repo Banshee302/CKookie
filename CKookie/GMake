@@ -1,0 +1,8 @@
+$compiler = gcc
+
+task build: PRINT = "GMake: Compiling CKookie Internet File Service.." 
+$compiler src/main.c -o ckookie
+cp src/ckookie ..
+
+task clean:
+rm -r src/ckookie
